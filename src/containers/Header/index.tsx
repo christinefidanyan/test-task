@@ -1,7 +1,6 @@
-import React, { BaseSyntheticEvent, useEffect, useState } from "react";
+import { BaseSyntheticEvent, useState } from "react";
 import styles from "./Header.module.scss";
-import { useAppDispatch, useAppSelector } from "../../store";
-import { weatherData } from "../../store/selectors";
+import { useAppDispatch } from "../../store";
 import { getData } from "../../store/reducers";
 
 const Header = () => {

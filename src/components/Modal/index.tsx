@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC } from "react";
 import styles from "./Modal.module.scss";
 import { TWarningModalProps } from "./types";
 import useOnClickOutside from "../../hooks/useOnClickOutside";
