@@ -1,0 +1,60 @@
+.container {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e9e9e9;
+
+    &__burger {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  @media (max-width: 768px) {
+    animation: slideDown 0.5s ease forwards, fadeIn 0.5s ease forwards;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container__logo {
+  display: flex;
+  align-items: center;
+}
